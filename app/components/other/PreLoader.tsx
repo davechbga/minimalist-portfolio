@@ -95,12 +95,12 @@ const PreLoader: React.FC = () => {
           height: "60px",
         }}
       >
-        <span>David Chiriboga</span>
+        <span>Web Developer</span>
         <span> / </span>
 
         <span className="flex items-center justify-center gap-3">
           {" "}
-          <Logo width={30} height={30} /> Web Developer
+          Building <Logo width={30} height={30} /> Eldora UI
         </span>
         <div className="sub hidden"></div>
       </div>

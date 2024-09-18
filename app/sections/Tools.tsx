@@ -21,6 +21,7 @@ import {
   SiVuedotjs,
   SiFigma,
   SiAdobe,
+  SiPrisma,
 } from "react-icons/si";
 import AnimatedTools from "../animations/AnimatedTools";
 
@@ -71,10 +72,11 @@ const Tools = () => {
                 stepSize={0.1}
                 iconSize={50}
               >
+                <SiPrisma size={50} />
+                <SiNodedotjs size={50} />
                 <SiPostgresql size={50} />
                 <SiMysql size={50} />
                 <SiMongodb size={50} />
-                <SiNodedotjs size={50} />
               </AnimatedTools>
             </div>
           </div>

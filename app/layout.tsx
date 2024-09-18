@@ -81,6 +81,10 @@ export const metadata: Metadata = {
   category: "technology",
 };
 
+export const viewport = {
+  colorScheme: "dark",
+};
+
 type RootLayoutProps = {
   children: ReactNode;
 };

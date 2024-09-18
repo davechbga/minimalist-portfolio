@@ -18,7 +18,6 @@ const ProjectCard = ({
   github,
   demo,
   image,
-  available,
 }: ProjectProps) => {
   return (
     <motion.div
@@ -52,7 +51,7 @@ const ProjectCard = ({
             id % 2 === 0 ? "left-0 ml-8 lg:ml-14" : "right-0 mr-8 lg:mr-14"
           } mt-6 flex  items-center justify-center gap-4 lg:mt-10`}
         >
-          {available ? (
+          {github ? (
             <>
               <Link
                 href={github}
@@ -67,20 +66,24 @@ const ProjectCard = ({
               >
                 <SiGithub />
               </Link>
-              <Link
-                href={demo}
-                target="_blank"
-                aria-label="Open Live Demo"
-                className=" w-[43px] rounded-full bg-white p-3 md:p-5 text-[20px] md:w-[65px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
-                data-blobity
-                data-blobity-radius="35"
-                data-blobity-offset-x="4"
-                data-blobity-offset-y="4"
-                data-blobity-magnetic="false"
-              >
-                <BsLink45Deg />
-              </Link>
             </>
+          ) : (
+            <div></div>
+          )}
+          {demo ? (
+            <Link
+              href={demo}
+              target="_blank"
+              aria-label="Open Demo"
+              className="rounded-full w-[43px] bg-white p-3 md:p-5 text-[20px] md:w-[65px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+              data-blobity
+              data-blobity-radius="35"
+              data-blobity-offset-x="4"
+              data-blobity-offset-y="4"
+              data-blobity-magnetic="false"
+            >
+              <BsLink45Deg />
+            </Link>
           ) : (
             <div></div>
           )}

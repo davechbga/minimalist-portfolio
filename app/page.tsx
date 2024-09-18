@@ -1,13 +1,10 @@
 "use client";
-import React, { useState } from "react";
-import { useEffectOnce, useEventListener } from "usehooks-ts";
-
-import PreLoader from "./components/other/PreLoader";
+import React, { useState, useEffect } from "react";
+import { useEventListener } from "usehooks-ts";
+// import PreLoader from "./components/other/PreLoader";
 import useBlobity from "./components/blobity/useBlobity";
-
 import Blur from "./components/overlay/Blur";
 import Color from "./components/overlay/Color";
-
 import NavBar from "./sections/NavBar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
@@ -20,13 +17,13 @@ export default function Home() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffectOnce(() => {
+  useEffect(() => {
     window.scrollTo({
       top: 0,
       left: 0,
     });
     setIsMobile(window.innerWidth < 768);
-  });
+  }, []);
 
   useEventListener("resize", () => {
     setIsMobile(window.innerWidth < 768);
@@ -54,7 +51,7 @@ export default function Home() {
 
   return (
     <>
-      <PreLoader />
+      {/* <PreLoader /> */}
       <Blur />
       <Color />
       <NavBar />
