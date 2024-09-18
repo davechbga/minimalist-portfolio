@@ -180,7 +180,7 @@ export default class Blobity {
         this.stickedToElementMutationObserver = new MutationObserver(
             (mutations) => {
                 for (const mutation of mutations) {
-                    mutation.removedNodes.forEach((el: any) => {
+                    mutation.removedNodes.forEach((el) => {
                         if (
                             el === this.stickedToElement ||
               el.contains(this.stickedToElement)

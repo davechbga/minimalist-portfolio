@@ -25,7 +25,7 @@ const animatedVariants: Variants = {
 const Animated: React.FC<AnimatedProps> = ({
     className,
     delay,
-    stepSize = 0.1,
+    // stepSize = 0.1,
     iconSize = 50,
     children,
 }) => {
