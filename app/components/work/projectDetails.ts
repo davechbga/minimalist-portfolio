@@ -1,4 +1,23 @@
-import { SiReact } from "react-icons/si";
+import {
+  SiAppwrite,
+  SiBootstrap,
+  SiCloudinary,
+  SiCss3,
+  SiExpress,
+  SiFiles,
+  SiJavascript,
+  SiMongodb,
+  SiNextdotjs,
+  SiNextui,
+  SiNodedotjs,
+  SiPrisma,
+  SiReact,
+  SiReactquery,
+  SiShadcnui,
+  SiSpring,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import { IconType } from "react-icons";
 
 export type ProjectProps = {
@@ -19,13 +38,18 @@ export const projects = [
     name: "AI Image/Video Editor",
     description:
       "A web app using AI to enhance and transform images and videos with various filters and effects.",
-    technologies: [SiReact],
+    technologies: [
+      SiNextdotjs,
+      SiTypescript,
+      SiTailwindcss,
+      SiCloudinary,
+      SiShadcnui,
+    ],
     techNames: [
       "Next.js",
       "TypeScript",
       "TailwindCSS",
       "Cloudinary",
-      "Zustand",
       "Shadcn/ui",
     ],
     github: "",
@@ -38,7 +62,7 @@ export const projects = [
     name: "SEPEC Management",
     description:
       "A platform to simplify medical appointment scheduling for administrators and patients.",
-    technologies: [SiReact],
+    technologies: [SiNextdotjs, SiTypescript, SiTailwindcss, SiAppwrite],
     techNames: ["Next.js", "TypeScript", "TailwindCSS", "Appwrite"],
     github: "",
     demo: "https://sepec.vercel.app/",
@@ -50,14 +74,14 @@ export const projects = [
     name: "Seat picker basketball games",
     description:
       "An interactive web app for selecting and booking seats for basketball games in real-time.",
-    technologies: [SiReact],
-    techNames: [
-      "Next.js",
-      "TypeScript",
-      "Spring Boot",
-      "TailwindCSS",
-      "nextUI",
+    technologies: [
+      SiNextdotjs,
+      SiTypescript,
+      SiSpring,
+      SiTailwindcss,
+      SiNextui,
     ],
+    techNames: ["Next.js", "TypeScript", "Spring", "TailwindCSS", "nextUI"],
     github: "",
     demo: "",
     image: "/projects/leonesApp.png",
@@ -68,7 +92,7 @@ export const projects = [
     name: "Budget Tracker v2",
     description:
       "A web app to manage finances, track expenses, set budget goals, and analyze spending patterns.",
-    technologies: [SiReact],
+    technologies: [SiNextdotjs, SiTypescript, SiTailwindcss, SiPrisma, SiReactquery],
     techNames: [
       "Next.js",
       "TypeScript",
@@ -86,7 +110,7 @@ export const projects = [
     name: "Overlay logo and image effects",
     description:
       "A web app to upload images and apply various overlay effects and logos, customizable and high resolution.",
-    technologies: [SiReact],
+    technologies: [SiReact, SiFiles, SiCss3, SiBootstrap],
     techNames: ["React", "File Upload", "CSS", "Bootstrap"],
     github: "https://github.com/davechbga/overlay-app",
     demo: "https://overlay-logo.netlify.app/",
@@ -98,7 +122,7 @@ export const projects = [
     name: "Pico y placa predictor",
     description:
       "A web app to check driving restrictions in Ecuador based on vehicle license plate numbers.",
-    technologies: [SiReact],
+    technologies: [SiReact, SiBootstrap],
     techNames: ["React", "Bootstrap"],
     github: "https://github.com/davechbga/pico-placa-predictor",
     demo: "https://pico-placa-predictor.netlify.app/",
@@ -110,7 +134,7 @@ export const projects = [
     name: "MERN Dashboard",
     description:
       "A comprehensive web app for data management and visualization using the MERN stack.",
-    technologies: [SiReact],
+    technologies: [SiMongodb, SiExpress, SiReact, SiNodedotjs],
     techNames: ["MongoDB", "Express.js", "React", "Node.js"],
     github: "https://github.com/davechbga/fullstack-dashboard",
     demo: "https://admin-frontend-davechbga.onrender.com/",
@@ -134,7 +158,7 @@ export const projects = [
     name: "Portfolio v2",
     description:
       "An upgraded personal portfolio showcasing skills and projects with enhanced functionality and design.",
-    technologies: [SiReact],
+    technologies: [SiReact, SiJavascript],
     techNames: ["React", "JavaScript"],
     github: "https://github.com/davechbga/davechbga-portfolio",
     demo: "https://davechbga-portfolio.netlify.app/",
