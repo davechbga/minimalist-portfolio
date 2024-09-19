@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 type AnimatedWordsProps = {
   title: string;
-  style: string;
+  style?: string;
 };
 
 const AnimatedWords: React.FC<AnimatedWordsProps> = ({ title, style }) => {
