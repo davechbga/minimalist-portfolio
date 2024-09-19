@@ -26,9 +26,37 @@ import {
 import AnimatedTools from "../animations/AnimatedTools";
 
 const Tools = () => {
+  const frontendIcons = [
+    { icon: SiTypescript, tooltip: "Typescript" },
+    { icon: SiJavascript, tooltip: "Javascript" },
+    { icon: SiTailwindcss, tooltip: "Tailwind CSS" },
+    { icon: SiBootstrap, tooltip: "Bootstrap" },
+    { icon: SiReact, tooltip: "React" },
+    { icon: SiVuedotjs, tooltip: "Vue.js" },
+    { icon: SiAngular, tooltip: "Angular" },
+    { icon: SiAstro, tooltip: "Astro" },
+    { icon: SiNextdotjs, tooltip: "Next.js" },
+  ];
+
+  const backendIcons = [
+    { icon: SiPrisma, tooltip: "Prisma" },
+    { icon: SiNodedotjs, tooltip: "Node.js" },
+    { icon: SiPostgresql, tooltip: "PostgreSQL" },
+    { icon: SiMysql, tooltip: "MySQL" },
+    { icon: SiMongodb, tooltip: "MongoDB" },
+  ];
+
+  const otherIcons = [
+    { icon: SiGithub, tooltip: "Github" },
+    { icon: SiGit, tooltip: "Git" },
+    { icon: SiWordpress, tooltip: "Wordpress" },
+    { icon: SiFigma, tooltip: "Figma" },
+    { icon: SiAdobe, tooltip: "Adobe" },
+  ];
+
   return (
     <section
-      className="relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-56"
+      className="relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-48"
       id="tools"
     >
       <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
@@ -51,15 +79,9 @@ const Tools = () => {
                 stepSize={0.1}
                 iconSize={50}
               >
-                <SiTypescript size={50} />
-                <SiJavascript size={50} />
-                <SiTailwindcss size={50} />
-                <SiBootstrap size={50} />
-                <SiReact size={50} />
-                <SiVuedotjs size={50} />
-                <SiAngular size={50} />
-                <SiAstro size={50} />
-                <SiNextdotjs size={50} />
+                {frontendIcons.map(({ icon: Icon, tooltip }, index) => (
+                  <Icon key={index} data-blobity-tooltip={tooltip} size={50} />
+                ))}
               </AnimatedTools>
             </div>
           </div>
@@ -72,11 +94,9 @@ const Tools = () => {
                 stepSize={0.1}
                 iconSize={50}
               >
-                <SiPrisma size={50} />
-                <SiNodedotjs size={50} />
-                <SiPostgresql size={50} />
-                <SiMysql size={50} />
-                <SiMongodb size={50} />
+                {backendIcons.map(({ icon: Icon, tooltip }, index) => (
+                  <Icon key={index} data-blobity-tooltip={tooltip} size={50} />
+                ))}
               </AnimatedTools>
             </div>
           </div>
@@ -89,11 +109,9 @@ const Tools = () => {
                 stepSize={0.1}
                 iconSize={50}
               >
-                <SiGithub size={50} />
-                <SiGit size={50} />
-                <SiWordpress size={50} />
-                <SiFigma size={50} />
-                <SiAdobe size={50} />
+                {otherIcons.map(({ icon: Icon, tooltip }, index) => (
+                  <Icon key={index} data-blobity-tooltip={tooltip} size={50} />
+                ))}
               </AnimatedTools>
             </div>
           </div>
